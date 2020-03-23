@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8">
+    <title>Pixabay Image Search</title>
+    <link  href="css/styles.css"rel="stylesheet" type="text/css" />
+ 
+
+</head>
+<body class="text-center">
+    
+    
+    <nav>
+        <h1>Pixabay Image Search</h1>
+        <form action="/search">
+            
+            Keyword: <input type="text" name="keyword">
+            <button> Search! </button>
+            <div><label>Orientation:</label>
+        <select id="orientation", name="orientation">
+        <option value="horizontal">Horizontal</option>
+        <option value="vertical">Vertical</option>
+        </select>
+        </form> 
+       
+        </div>
+        
+    </nav>
+    <div id = "frame">
+        
+       
+        
+        
+    </div>
+    
+
+ <div class="flex-container">
+    
+    
+    <div class="frame">likes: <%= images.hits[0].likes %>
+    <img src='<%= images.hits[0].largeImageURL %>' width='250' ></div>
+    
+    <div class="frame">likes: <%= images.hits[1].likes %>
+        <img src='<%= images.hits[1].largeImageURL %>' width='250' ></div>
+    
+    <div class="frame">likes: <%= images.hits[0].likes %>
+        <img src='<%= images.hits[2].largeImageURL %>' width='250' ></div>
+    
+    <div class="frame">likes: <%= images.hits[0].likes %>
+        <img src='<%= images.hits[3].largeImageURL %>' width='250'></div>
+
+
+</div>
+    
+ 
+
+</body>
+    
+
+    
+</html>

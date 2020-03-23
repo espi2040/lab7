@@ -1,0 +1,45 @@
+
+
+nav { /* links within "nav" container */
+    padding:15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color:#ffcc66;         /* defualt , links are vlue */
+
+}
+
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  display: center;
+	padding-top: 70px;
+	background-color:#6666ff;
+	 text-align: center;
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+  
+}
+
+.frame {
+  display: flex;
+   flex-direction: column;
+  
+  background: #ffcc66; 
+  margin: auto;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+
+
+
+
